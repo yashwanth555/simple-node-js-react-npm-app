@@ -28,7 +28,7 @@ pipeline {
     }
     stage ('restart the webserver'){
       steps{
-        sh 'systemctl restart  nginx'
+        sh 'sudo systemctl restart  nginx'
       }
     }
     stage ('status of the web server'){
