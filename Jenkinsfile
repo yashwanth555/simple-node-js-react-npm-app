@@ -26,5 +26,10 @@ pipeline {
         sh 'sudo cp -r /var/lib/jenkins/workspace/sample_react/build /usr/share/nginx/react-app/'
       }
     }
+    stage ('restart the webserver'){
+      steps{
+        sh 'systemctl status nginx'
+      }
+    }
   }
 }
