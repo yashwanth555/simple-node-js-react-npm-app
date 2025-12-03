@@ -11,9 +11,9 @@ pipeline {
         sh './jenkins/scripts/test.sh'
       }
     }
-    stage('Deliver'){
+    stage('build the react app'){
       steps{
-        sh './jenkins/scripts/deliver.sh'
+        sh 'npm run build'
       }
     }
   }
