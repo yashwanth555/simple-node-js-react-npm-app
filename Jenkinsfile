@@ -21,5 +21,10 @@ pipeline {
         sh 'sudo rm -rf /usr/share/nginx/react-app/build'
       }
     }
+    stage ('copy the latest build'){
+      steps {
+        sh 'sudo cp -r /var/lib/jenkins/workspace/sample_react/build /usr/share/nginx/react-app/'
+      }
+    }
   }
 }
