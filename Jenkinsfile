@@ -18,7 +18,7 @@ pipeline {
     }
     stage('remove the existing build'){
       steps{
-        sh 'sudo rm -rf /usr/share/nginx/react-app/build'
+        sh 'sudo -S rm -rf  /usr/share/nginx/react-app/build'
       }
     }
     stage ('copy the latest build'){
