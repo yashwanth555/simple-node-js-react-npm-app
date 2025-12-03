@@ -18,7 +18,7 @@ pipeline {
     }
     stage('remove the existing build'){
       steps{
-        sh 'rm -rf /usr/share/nginx/react-app/build'
+        sh 'sudo rm -rf /usr/share/nginx/react-app/build'
       }
     }
   }
