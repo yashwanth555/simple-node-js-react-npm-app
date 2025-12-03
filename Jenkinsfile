@@ -28,6 +28,11 @@ pipeline {
     }
     stage ('restart the webserver'){
       steps{
+        sh 'systemctl restart  nginx'
+      }
+    }
+    stage ('status of the web server'){
+      steps{
         sh 'systemctl status nginx'
       }
     }
