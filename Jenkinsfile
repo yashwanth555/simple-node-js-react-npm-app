@@ -1,3 +1,5 @@
+https://www.docker.com/blog/docker-and-jenkins-build-robust-ci-cd-pipelines/
+
 pipeline {
     agent any
     stages {
